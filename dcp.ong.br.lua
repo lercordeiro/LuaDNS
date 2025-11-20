@@ -27,16 +27,16 @@ aaaa("mail", "2804:814:801a:1000:face::2")
 srv("_https._tcp", "dcp.ong.br", 443)
 
 -- E-Mail
-srv("_smtp._tcp", "mail.ler.cordeiro.nom.br", 25)
-srv("_submission._tcp", "mail.ler.cordeiro.nom.br", 587)
-srv("_imap._tcp", "mail.ler.cordeiro.nom.br", 143)
-srv("_sieve._tcp", "mail.ler.cordeiro.nom.br", 4190)
+srv("_smtp._tcp", "mail.dcp.ong.br", 25)
+srv("_submission._tcp", "mail.dcp.ong.br", 587)
+srv("_imap._tcp", "mail.dcp.ong.br", 143)
+srv("_sieve._tcp", "mail.dcp.ong.br", 4190)
 
 -- TLS RPT txt record
 txt("_smtp._tls", "v=TLSRPTv1;rua=mailto:lercordeiro-d@tlsrpt.report-uri.com")
 
 -- CAA recors
-caa("dcp.ong.rr", "letsencrypt.org", "issue")
+caa("dcp.ong.br", "letsencrypt.org", "issue")
 caa("dcp.ong.br", "mailto:csirt@ler.cordeiro.nom.br", "iodef")
 
 -- DKIM records
