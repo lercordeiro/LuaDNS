@@ -57,8 +57,8 @@ tlsa("*._tcp.mail", 2, "d016e1fe311948aca64f2de44ce86c9a51ca041df6103bb52a88eb3f
 
 -- NÃO ESQUECER!!!  https://www.huque.com/bin/gen_tlsa -> 3 1 1
 -- openssl x509 -in /usr/local/etc/letsencrypt/live/ler.cordeiro.nom.br/cert.pem -noout -pubkey | openssl pkey -pubin -outform DER | openssl dgst -sha256 
-tlsa("*._tcp", 3, "820768ee88d1eaa2e21e33681d7cbc8f7db14e7d41325d23a9b1185cacf97e86", 1, 1)
-tlsa("*._tcp.mail", 3, "60d127956b9ba870cd70d36c62eea5e15a533a14308705ed1021e1868cb7c7c9", 1, 1)
+tlsa("*._tcp", 3, "xxx", 1, 1)
+tlsa("*._tcp.mail", 3, "xxx", 1, 1)
 
 
 -- EOF --
