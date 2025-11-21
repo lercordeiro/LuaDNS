@@ -10,7 +10,6 @@
 -- ns(_a, "ns3.luadns.net")
 -- ns(_a, "ns4.luadns.net")
 
-mx(_a, "mail.dcp.ong.br", 10)
 txt(_a, "v=spf1 -all")
 
 -- A records
@@ -22,6 +21,7 @@ aaaa(_a, "2804:814:801a:1000:face::1")
 -- SRV records
 
 -- Web
+srv("_http._tcp", "dcp.ong.br", 80)
 srv("_https._tcp", "dcp.ong.br", 443)
 
 -- CAA recors
@@ -35,12 +35,10 @@ caa("dcp.ong.br", "mailto:csirt@ler.cordeiro.nom.br", "iodef")
 -- Let's Encrypt E8: 885bf0572252c6741dc9a52f5044487fef2a93b811cdedfad7624cc283b7cdd5
 -- Let's Encrypt E9: f1440a9b76e1e41e53a4cb461329bf6337b419726be513e42e19f1c691c5d4b2
 tlsa("*._tcp", 2, "d016e1fe311948aca64f2de44ce86c9a51ca041df6103bb52a88eb3f761f57d7", 1, 1)
-tlsa("*._tcp.mail", 2, "d016e1fe311948aca64f2de44ce86c9a51ca041df6103bb52a88eb3f761f57d7", 1, 1)
 
 -- NÃO ESQUECER!!!  https://www.huque.com/bin/gen_tlsa -> 3 1 1
 -- openssl x509 -in /usr/local/etc/letsencrypt/live/ler.cordeiro.nom.br/cert.pem -noout -pubkey | openssl pkey -pubin -outform DER | openssl dgst -sha256 
 -- tlsa("*._tcp", 3, "xxxx", 1, 1)
--- tlsa("*._tcp.mail", 3, "xxxx", 1, 1)
 
 
 -- EOF --
