@@ -11,40 +11,22 @@
 -- ns(_a, "ns4.luadns.net")
 
 mx(_a, "mail.dcp.ong.br", 10)
-txt(_a, "v=spf1 mx ip6:2804:814:801a:1000:face::2 -all")
+txt(_a, "v=spf1 -all")
 
 -- A records
 a(_a, "186.233.20.223")
-a("mail", "186.233.20.223")
 
 -- AAAA records
 aaaa(_a, "2804:814:801a:1000:face::1")
-aaaa("mail", "2804:814:801a:1000:face::2")
 
 -- SRV records
 
 -- Web
 srv("_https._tcp", "dcp.ong.br", 443)
 
--- E-Mail
-srv("_smtp._tcp", "mail.dcp.ong.br", 25)
-srv("_submission._tcp", "mail.dcp.ong.br", 587)
-srv("_imap._tcp", "mail.dcp.ong.br", 143)
-srv("_sieve._tcp", "mail.dcp.ong.br", 4190)
-
--- TLS RPT txt record
-txt("_smtp._tls", "v=TLSRPTv1;rua=mailto:lercordeiro-d@tlsrpt.report-uri.com")
-
 -- CAA recors
 caa("dcp.ong.br", "letsencrypt.org", "issue")
 caa("dcp.ong.br", "mailto:csirt@ler.cordeiro.nom.br", "iodef")
-
--- DKIM records
-txt("_adsp._domainkey", "dkim=all")
-txt("lercordeironombr._domainkey", "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2vJeCdU3oDkn2PsKSDdUDuMHzXhvp6ojRby6XbSEKd8VAVzh+eB+zBDPZOdZ8+83GhrIis5r7Z8aHSPS2DydccL3vmiiuQJL6mgGffmKv0kJsj2nFio3gzyk4TpKX31/5uKVoVmboHwRfeTdz4PKWNiuKMCDsu2bFgqrxz7r/IwYjq45qXML4+HQq+Jq24Q3Ze8vaeplOGIzNOIh3t6HYLNCnTjBTWLDIzvZT0IyNH1FGDyt/V1l7jiKONiWUNliLXalej0e8VHSJ5yp1OIdFkRHHL6M98yU2amUfqp7TFsSnT+zk4zTaGHt9h2+zNa/LXDljxEq6ue4q8fDoYAVTQIDAQAB")
-
--- DMARC records
-txt("_dmarc", "v=DMARC1; p=quarantine; rua=mailto:postmaster@ler.cordeiro.nom.br,mailto:lercordeiro-d@dmarc.report-uri.com; ruf=mailto:postmaster@ler.cordeiro.nom.br; fo=0:1:d:s; adkim=s; aspf=s; pct=100; rf=afrf; ri=86400;")
 
 -- DANE: Tem que mudar a cada novo certificado let's encrypt...
 -- Let's Encrypt E5: 3586d4ecf070578cbd27aedce20b964e48bc149faeb9dad72f46b857869172b8
