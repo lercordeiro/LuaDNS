@@ -37,8 +37,8 @@ caa("dcp.ong.br", "mailto:csirt@ler.cordeiro.nom.br", "iodef")
 tlsa("*._tcp", 2, "d016e1fe311948aca64f2de44ce86c9a51ca041df6103bb52a88eb3f761f57d7", 1, 1)
 
 -- NÃO ESQUECER!!!  https://www.huque.com/bin/gen_tlsa -> 3 1 1
--- openssl x509 -in /usr/local/etc/letsencrypt/live/ler.cordeiro.nom.br/cert.pem -noout -pubkey | openssl pkey -pubin -outform DER | openssl dgst -sha256 
--- tlsa("*._tcp", 3, "xxxx", 1, 1)
+-- openssl x509 -in /usr/local/etc/letsencrypt/live/dcp.ong.br/cert.pem -noout -pubkey | openssl pkey -pubin -outform DER | openssl dgst -sha256 
+-- tlsa("*._tcp", 3, "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 1, 1)
 
 
 -- EOF --
