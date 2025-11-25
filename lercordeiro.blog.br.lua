@@ -26,8 +26,8 @@ srv("_http._tcp", "lercordeiro.blog.br", 80)
 srv("_https._tcp", "lercordeiro.blog.br", 443)
 
 -- CAA recors
-caa("dcp.ong.br", "letsencrypt.org", "issue")
-caa("dcp.ong.br", "mailto:csirt@ler.cordeiro.nom.br", "iodef")
+caa("lercordeiro.blog.br", "letsencrypt.org", "issue")
+caa("lercordeiro.blog.br", "mailto:csirt@ler.cordeiro.nom.br", "iodef")
 
 -- DANE: Tem que mudar a cada novo certificado let's encrypt...
 -- Let's Encrypt E5: 3586d4ecf070578cbd27aedce20b964e48bc149faeb9dad72f46b857869172b8
