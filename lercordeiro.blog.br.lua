@@ -1,8 +1,8 @@
--- File: dcp.ong.br.lua
--- Zone: dcp.ong.br
+-- File: lercordeiro.blog.br.lua
+-- Zone: lercordeiro.blog.br
 -- SOA record is automatically generated
 -- Variable _a is replaced with zone name (from filename)
--- _a = "dcp.ong.br"
+-- _a = "lercordeiro.blog.br"
 
 -- Sao adicionados automaticamente
 -- ns(_a, "ns1.luadns.net")
@@ -10,7 +10,7 @@
 -- ns(_a, "ns3.luadns.net")
 -- ns(_a, "ns4.luadns.net")
 
--- SPF record
+-- SPF Record
 txt(_a, "v=spf1 -all")
 
 -- A records
@@ -22,8 +22,8 @@ aaaa(_a, "2804:814:801a:1000:face::1")
 -- SRV records
 
 -- Web
-srv("_http._tcp", "dcp.ong.br", 80)
-srv("_https._tcp", "dcp.ong.br", 443)
+srv("_http._tcp", "lercordeiro.blog.br", 80)
+srv("_https._tcp", "lercordeiro.blog.br", 443)
 
 -- CAA recors
 caa("dcp.ong.br", "letsencrypt.org", "issue")
@@ -38,7 +38,7 @@ caa("dcp.ong.br", "mailto:csirt@ler.cordeiro.nom.br", "iodef")
 tlsa("*._tcp", 2, "d016e1fe311948aca64f2de44ce86c9a51ca041df6103bb52a88eb3f761f57d7", 1, 1)
 
 -- NÃO ESQUECER!!!  https://www.huque.com/bin/gen_tlsa -> 3 1 1
--- openssl x509 -in /usr/local/etc/letsencrypt/live/dcp.ong.br/cert.pem -noout -pubkey | openssl pkey -pubin -outform DER | openssl dgst -sha256 
+-- openssl x509 -in /usr/local/etc/letsencrypt/live/lercordeiro.blog.br/cert.pem -noout -pubkey | openssl pkey -pubin -outform DER | openssl dgst -sha256 
 -- tlsa("*._tcp", 3, "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", 1, 1)
 
 

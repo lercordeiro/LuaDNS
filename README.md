@@ -2,5 +2,6 @@
 
 ## Zonas
 
-o ler.cordeiro.nom.br
-o dcp.ong.br
+- ler.cordeiro.nom.br
+- lercordeiro.blog.br
+- dcp.ong.br
