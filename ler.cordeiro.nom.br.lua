@@ -80,7 +80,7 @@ sshfp("frankenstein", 4, "5520ba154fc62cf5ee0d17299b307f493575fbf7d015748cfe63e3
 -- Let's Encrypt E7: cbbc559b44d524d6a132bdac672744da3407f12aae5d5f722c5f6c7913871c75
 -- Let's Encrypt E8: 885bf0572252c6741dc9a52f5044487fef2a93b811cdedfad7624cc283b7cdd5
 -- Let's Encrypt E9: f1440a9b76e1e41e53a4cb461329bf6337b419726be513e42e19f1c691c5d4b2
-tlsa("*._tcp", 2, "d016e1fe311948aca64f2de44ce86c9a51ca041df6103bb52a88eb3f761f57d7", 1, 1)
+tlsa("*._tcp", 2, "cbbc559b44d524d6a132bdac672744da3407f12aae5d5f722c5f6c7913871c75", 1, 1)
 tlsa("*._tcp.dcp", 2, "3586d4ecf070578cbd27aedce20b964e48bc149faeb9dad72f46b857869172b8", 1, 1)
 tlsa("*._tcp.frankenstein", 2, "d016e1fe311948aca64f2de44ce86c9a51ca041df6103bb52a88eb3f761f57d7", 1, 1)
 tlsa("*._tcp.mail", 2, "d016e1fe311948aca64f2de44ce86c9a51ca041df6103bb52a88eb3f761f57d7", 1, 1)
