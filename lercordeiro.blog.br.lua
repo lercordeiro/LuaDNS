@@ -39,7 +39,7 @@ tlsa("*._tcp", 2, "cbbc559b44d524d6a132bdac672744da3407f12aae5d5f722c5f6c7913871
 
 -- NÃO ESQUECER!!!  https://www.huque.com/bin/gen_tlsa -> 3 1 1
 -- openssl x509 -in /usr/local/etc/letsencrypt/live/lercordeiro.blog.br/cert.pem -noout -pubkey | openssl pkey -pubin -outform DER | openssl dgst -sha256 
--- tlsa("*._tcp", 3, "b0a165cb91a85934611208f267683ca98167b8114fcc1bbdafa3195d04b719a4", 1, 1)
+tlsa("*._tcp", 3, "b0a165cb91a85934611208f267683ca98167b8114fcc1bbdafa3195d04b719a4", 1, 1)
 
 
 -- EOF --

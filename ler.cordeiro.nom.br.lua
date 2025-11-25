@@ -102,5 +102,4 @@ tlsa("*._tcp.repo", 3, "1e23e5efb32196f949a7cfea858ea2393dfe1341f4671878c83e10ad
 tlsa("*._tcp.stats", 3, "31ff18bc6cd4c0028baca6c0bcbee295655a88f5efa3bf13e68fbcef3213f5f5", 1, 1)
 tlsa("*._tcp.impressora", 3, "45f4923b5cfe8f76f5596e9b87531c431d67a85a0e94757b9e5e1e82acf116d2", 1, 1)
 
-
 -- EOF --
