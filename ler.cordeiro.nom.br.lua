@@ -64,7 +64,7 @@ txt("_adsp._domainkey", "dkim=all")
 txt("lercordeironombr._domainkey", "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2vJeCdU3oDkn2PsKSDdUDuMHzXhvp6ojRby6XbSEKd8VAVzh+eB+zBDPZOdZ8+83GhrIis5r7Z8aHSPS2DydccL3vmiiuQJL6mgGffmKv0kJsj2nFio3gzyk4TpKX31/5uKVoVmboHwRfeTdz4PKWNiuKMCDsu2bFgqrxz7r/IwYjq45qXML4+HQq+Jq24Q3Ze8vaeplOGIzNOIh3t6HYLNCnTjBTWLDIzvZT0IyNH1FGDyt/V1l7jiKONiWUNliLXalej0e8VHSJ5yp1OIdFkRHHL6M98yU2amUfqp7TFsSnT+zk4zTaGHt9h2+zNa/LXDljxEq6ue4q8fDoYAVTQIDAQAB")
 
 -- DMARC records
-txt("_dmarc", "v=DMARC1; p=quarantine; rua=mailto:postmaster@ler.cordeiro.nom.br,mailto:lercordeiro-d@dmarc.report-uri.com; ruf=mailto:postmaster@ler.cordeiro.nom.br; fo=0:1:d:s; adkim=s; aspf=s; pct=100; rf=afrf; ri=86400;")
+txt("_dmarc", "v=DMARC1; p=quarantine; rua=mailto:postmaster@ler.cordeiro.nom.br; ruf=mailto:postmaster@ler.cordeiro.nom.br; fo=1; adkim=s; aspf=s; rf=afrf; ri=86400;")
 
 -- SSHFP da Frankenstein
 sshfp("frankenstein", 1, "df111b2493692e01b261761083452292ddbd2375", 1)
