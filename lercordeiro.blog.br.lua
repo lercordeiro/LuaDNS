@@ -10,6 +10,9 @@
 -- ns(_a, "ns3.luadns.net")
 -- ns(_a, "ns4.luadns.net")
 
+-- MX
+mx(_a, ".", 0)
+
 -- SPF Record
 txt(_a, "v=spf1 -all")
 
