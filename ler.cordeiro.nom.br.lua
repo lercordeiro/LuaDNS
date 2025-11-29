@@ -121,7 +121,7 @@ tlsa("*._tcp.dcp", 3, "067a10b4e3c7ef30b25584afeebc4a03230de865c4fd7d395a6702c35
 tlsa("*._tcp.frankenstein", 3, "84457eacbdef2b390f2d05e55f027f0f57e72804528aac54ea343e94d256708f", 1, 1)
 tlsa("*._tcp.mail", 3, "60d127956b9ba870cd70d36c62eea5e15a533a14308705ed1021e1868cb7c7c9", 1, 1)
 tlsa("*._tcp.matrix", 3, "96156a7e0c03881b94ef9954bc06a11d06a4f4e549bd452e1cbaf732f5a489a2", 1, 1)
-tlsa("*._tcp.mm", 3, "cec3260506fd5196989bd3a6fda6e4c6ff16ec4d59aa66c0765ac5f299d5285f", 1, 1)
+tlsa("*._tcp.mm", 3, "cab8474367f0ae5da4d6460beb26af11d77e624032fd11e1c4e9616de04026cc", 1, 1)
 tlsa("*._tcp.repo", 3, "1e23e5efb32196f949a7cfea858ea2393dfe1341f4671878c83e10ad539ff38a", 1, 1)
 tlsa("*._tcp.stats", 3, "31ff18bc6cd4c0028baca6c0bcbee295655a88f5efa3bf13e68fbcef3213f5f5", 1, 1)
 tlsa("*._tcp.impressora", 3, "45f4923b5cfe8f76f5596e9b87531c431d67a85a0e94757b9e5e1e82acf116d2", 1, 1)
