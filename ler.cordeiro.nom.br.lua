@@ -10,8 +10,13 @@
 -- ns(_a, "ns3.luadns.net")
 -- ns(_a, "ns4.luadns.net")
 
+-- MX
 mx(_a, "mail.ler.cordeiro.nom.br", 10)
+
+-- SPF Record
 txt(_a, "v=spf1 mx ip6:2804:814:801a:1000:face::2 -all")
+
+-- AT Proto Record
 txt("_atproto", "did=did:plc:36pd5ld233cgdnclqdtxgznz")
 
 -- A records
