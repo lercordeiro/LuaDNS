@@ -42,7 +42,7 @@ caa("lercordeiro.blog.br", "mailto:csirt@ler.cordeiro.nom.br", "iodef")
 
 -- DKIM records
 txt("_adsp._domainkey", "dkim=all")
-txt("lercordeiroblogbr._domainkey", "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2vJeCdU3oDkn2PsKSDdUDuMHzXhvp6ojRby6XbSEKd8VAVzh+eB+zBDPZOdZ8+83GhrIis5r7Z8aHSPS2DydccL3vmiiuQJL6mgGffmKv0kJsj2nFio3gzyk4TpKX31/5uKVoVmboHwRfeTdz4PKWNiuKMCDsu2bFgqrxz7r/IwYjq45qXML4+HQq+Jq24Q3Ze8vaeplOGIzNOIh3t6HYLNCnTjBTWLDIzvZT0IyNH1FGDyt/V1l7jiKONiWUNliLXalej0e8VHSJ5yp1OIdFkRHHL6M98yU2amUfqp7TFsSnT+zk4zTaGHt9h2+zNa/LXDljxEq6ue4q8fDoYAVTQIDAQAB")
+txt("lercordeiroblogbr._domainkey", "v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDVpHRRfPOlxB6Uh31v5veGmOwRwxbK3zcHt0KN/0rNss1gvAolWIaHhXC0GAMNRYjPDlkSfYtqhxxvyYUjdJyLyfhdu8R1XzkECsncBL0/7uO4L+XQ2q9du5siafEwuivxcsXABOIbtbUlc47hBlBnXuk//kXFDQt1dVSyXT6gXwIDAQAB")
 
 -- DANE: Tem que mudar a cada novo certificado let's encrypt...
 -- Let's Encrypt E5: 3586d4ecf070578cbd27aedce20b964e48bc149faeb9dad72f46b857869172b8

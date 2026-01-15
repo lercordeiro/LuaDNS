@@ -58,7 +58,7 @@ srv("_imap._tcp", "mail.ler.cordeiro.nom.br", 143)
 srv("_sieve._tcp", "mail.ler.cordeiro.nom.br", 4190)
 
 -- TLS RPT txt record
-txt("_smtp._tls", "v=TLSRPTv1;rua=mailto:lercordeiro-d@tlsrpt.report-uri.com")
+txt("_smtp._tls", "v=TLSRPTv1;rua=mailto:lercordeiro@ler.cordeiro.nom.br")
 
 -- CAA recors
 caa("ler.cordeiro.nom.br", "letsencrypt.org", "issue")
