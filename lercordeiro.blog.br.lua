@@ -22,7 +22,7 @@ a("mail", "186.233.20.223")
 
 -- AAAA records
 aaaa(_a, "2804:814:801a:1000:face::1")
-aaaa("mail", "2804:814:801a:1000:face::1")
+aaaa("mail", "2804:814:801a:1000:face::2")
 
 -- SRV records
 
