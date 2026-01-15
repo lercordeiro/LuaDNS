@@ -35,6 +35,9 @@ srv("_https._tcp", "lercordeiro.blog.br", 443)
 
 -- E-Mail
 srv("_smtp._tcp", "mail.lercordeiro.blog.br", 25)
+srv("_submission._tcp", "mail.lercordeiro.blog.br", 587)
+srv("_imap._tcp", "mail.lercordeiro.blog.br", 143)
+srv("_sieve._tcp", "mail.lercordeiro.blog.br", 4190)
 
 -- CAA recors
 caa("lercordeiro.blog.br", "letsencrypt.org", "issue")
